@@ -201,6 +201,16 @@ which is the first part of our project.
     \item[\texttt{test/}]%
           Minimal unit tests for GPT-2 model forward-pass correctness and for the
           \texttt{Adam} optimiser.
+          \begin{verbatim}
+            $ cd my-gpt2-project
+            $ python3 test/optimizer_test.py
+            Your GPT2 implementation is correct!
+            $ python3 test/sanity_check.py
+            Optimizer test passed!
+            \end{verbatim}
+            
+
+          The following steps demonstrate the verification process for the GPT-2 implementation and optimizer:
   
     \item[\texttt{config.py}]%
           Default hyper-parameters (hidden size, \#layers, dropout
@@ -211,6 +221,14 @@ which is the first part of our project.
     \item[\texttt{README.md}]%
           Step-by-step running instructions.
   \end{description}
+
+  \begin{center}
+    \fbox{\parbox{0.9\textwidth}{
+        \centering
+        \textbf{Code Repository} \\
+        \url{https://github.com/Pinarinith/my-gpt2-project}
+    }}
+    \end{center}
 
   \subsection{Attention Module (\texttt{attention.py})}
 
